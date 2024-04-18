@@ -62,7 +62,6 @@ def sand_a():
 
     n = cheeeck(w)
 
-    # Создай необходимое число сэндвичей
     if n:
         for i in range(k):
             print('Делаем', i + 1, 'сэндвич')
@@ -94,9 +93,7 @@ def sand_b():
 
     n = cheeeck(w)
 
-        # Создай необходимое число сэндвичей
     if n:
-        # Создай необходимое число сэндвичей
         for i in range(k):
             print('Делаем', i + 1, 'сэндвич:')
             print('Кладем хлебушек')
@@ -119,7 +116,6 @@ def sand_b():
             lettuce_count -= LETTUCE_B
 
 def count_ing():
-    # Отобрази пользователю количество запасов каждого ингредиента
     for k, v in {'хлеб': bread_count, 'ветчина': cutlet_count, 'сыр': cheese_count, 'соус': sauce_count,
                  'салат': lettuce_count}.items():
         print(k, v)
@@ -133,10 +129,8 @@ def add_ing():
     print("5) Листы салата")
 
     ingredient_choice = int(input())
-    # Считай ввод пользователя в переменную ingredient_choice
 
     print("Введите количество, которое хотите добавить:")
-    # Считай ввод пользователя
     nn = int(input())
 
     if ingredient_choice == 1:
@@ -166,8 +160,6 @@ def end_sand():
     print('Заказ завершен. Приходите еще!')
     flag = False
 
-# Перепиши решение из файла `materials/week1/day2/sandwich_5.py`
-# Для создания меню используй "бесконечный цикл"
 flag = True
 while flag:
 
@@ -181,11 +173,6 @@ while flag:
 
     func_dic = {1: sand_a, 2: sand_b, 3: count_ing, 4: add_ing, 5: only_check, 6: end_sand}
 
-    # Считай ввод пользователя в переменную choice
     choice = int(input())
     func_dic[choice]()
 
-
-
-# Используй функции для создания сэндвичей, 
-# для проверки "Можно ли создать сэндвич?"
